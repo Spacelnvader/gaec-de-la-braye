@@ -1,0 +1,36 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.BAquitaine-container {
+    padding-top: 15%;
+}
+.BAquitaine-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 10% 0 10% 0;
+}
+
+h2{
+    font-size: 35px;
+    text-decoration: underline;
+    margin-top: 15%;
+}
+
+.Medal {
+    font-size: 50px;
+    margin-left: -20px;
+}
+
+article {
+    font-size: 28px;
+    margin: 10px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: bold;
+   
+}
+

@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: "Verdana", sans-serif;    
+}
+
+:root {
+    --main: #FF6060;
+    --white: #FFFFFF;
+    --grey: #F6F6F6;
+    --footer: #000000
+}
+
+body {
+    max-width: 1240px;
+    margin: 0 auto;
+    background-image: url("../assets/background-image.png");
+    background-size: 5%;    
+}
+h3 {
+    color: #8B0000;
+    text-decoration: underline;
+    margin: 15px;
+    font-size: 30px;
+}
+.cow {
+    font-size: 100px;
+    color: rgb(124, 70, 23);
+    margin: 0 10px;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.prairieVaches {
+    margin-top: 40px;  
+    width: 70%;
+    border: solid 4px #339966;
+}
+.aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.aboutus p {
+    font-size: 28px;
+    margin: 10px;
+    word-spacing: 1px;
+    line-height: 1.8;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+.leaf{
+    font-size: 60px;
+    margin: 20px;
+    color: #339966;
+}
+
+.green-bald-text {
+    font-size: 24px;
+    margin: 10px;
+    color: #339966;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+@media screen and (max-width:430px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        border-radius: 0;
+        background-color: transparent;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+
+}

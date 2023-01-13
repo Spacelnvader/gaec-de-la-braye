@@ -1,0 +1,19 @@
+[
+    {
+        "id": "1",
+        "title": "Colis découverte",
+        "cover": "../assets/Colis/Steak-au-bleu.jpg",
+        "description": "Dans ce colis de 8 kg, nous vous proposons des morceaux découverte afin que vous goûtiez le meilleur de notre viande, attention les papilles !"
+    },
+    {
+        "id": "2",
+        "title": "Colis Estival",
+        "description": "Dans ce colis de 12kg, vous vous régalerez avec des morceaux traditionnels succulents! Plats en sauce ou barbecue, à vos fourneaux !"
+    },
+    {
+        "id": "3",
+        "title": "Colis Mixte",
+        "description": "Les gourmands ou familles nombreuses, ce colis est fait pour vous! 15kg de viande allant du steak haché en passant par le bourguignon et en finissant par un bon barbecue, Miam !"
+    }
+
+]

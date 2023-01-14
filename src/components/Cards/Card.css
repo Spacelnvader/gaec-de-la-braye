@@ -33,16 +33,24 @@
     top: 68%;
     border-radius: 10px;
     padding: 0 10px 0 10px;
-    font-size: 18px;
-    
+    font-size: 18px;    
 }
 
-.card span {
+.card .price {
     position: absolute;
     top: 90%;
     padding-left: 10px;
     color:rgb(183, 63, 63);
     font-size: 30px;
+}
+
+.card .periode{
+    position: absolute;
+    font-size: 20px;
+    top: 85%;
+    padding-left: 10px;
+    color:rgb(183, 63, 63);
+    text-decoration: underline;
 }
 
 @media screen and (max-width:430px) {

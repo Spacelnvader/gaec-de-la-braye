@@ -6,7 +6,8 @@ function Card(props)  {
             <img src={props.cover} alt={props.title} />
             <h2>{props.title}</h2>
             <div>{props.description}</div>
-            <span>{props.price}</span>
+            <span className="periode">{props.disclaimer}</span>
+            <span className="price">{props.price}</span>
         </article>
     )
 }

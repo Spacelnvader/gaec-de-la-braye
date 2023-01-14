@@ -7,7 +7,8 @@ function getAllColis(){
             description : colis.description,
             title :colis.title,
             id : colis.id,
-            price : colis.price
+            price : colis.price,
+            disclaimer : colis.disclaimer
         }
     })
 };

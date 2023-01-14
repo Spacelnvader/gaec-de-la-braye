@@ -13,7 +13,7 @@
     margin: 10% 0 10% 0;
 }
 
-h2{
+.BAquitaine-titre{
     font-size: 35px;
     text-decoration: underline;
     margin-top: 15%;
@@ -24,7 +24,7 @@ h2{
     margin-left: -20px;
 }
 
-article {
+.BAquitaine-article {
     font-size: 28px;
     margin: 10px;
     word-spacing: 1px;

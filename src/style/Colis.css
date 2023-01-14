@@ -1,0 +1,26 @@
+div.colis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 4%;
+
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 28%;
+    background-color: aliceblue;
+    border: 5px solid red;
+    padding: 15px;
+    position: relative;
+    left: 36%;
+    top: -550px;
+    margin-bottom: -299px;
+}
+
+.disclaimer p {
+    font-size: 20px;
+    
+}

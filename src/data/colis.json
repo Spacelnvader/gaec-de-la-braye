@@ -1,21 +1,38 @@
 [
     {
         "id": "1",
-        "title": "Colis découverte",
+        "title": "Colis de 5kg",
         "cover": "/images/Steak-au-bleu.jpg",
-        "description": "Dans ce colis de 8 kg, nous vous proposons des morceaux découverte afin que vous goûtiez le meilleur de notre viande, attention les papilles !"
+        "description": "55% viande de 1er choix (steaks, rôtis, entrecôtes, tournedos...) 45% viande de 2eme choix (Bourguignon, Plat de côte, Jarret)",
+        "price": "78€"
     },
     {
         "id": "2",
-        "title": "Colis Estival",
-        "cover": "/images/barbecue.jpg",
-        "description": "Dans ce colis de 12kg, vous vous régalerez avec des morceaux traditionnels succulents! Plats en sauce ou barbecue, à vos fourneaux !"
+        "title": "Colis de 8 kg",
+        "cover": "/images/viande-crue.jpg",
+        "description": "55% viande de 1er choix (steaks, rôtis, entrecôtes, tournedos...) 45% viande de 2eme choix (Bourguignon, Plat de côte, Jarret)",
+        "price": "125€"
     },
     {
         "id": "3",
-        "title": "Colis Mixte",
-        "cover": "/images/viande-crue.jpg",
-        "description": "Les gourmands ou familles nombreuses, ce colis est fait pour vous! 15kg de viande allant du steak haché en passant par le bourguignon et en finissant par un bon barbecue, Miam !"
+        "title": "Colis estival 5kg",
+        "cover": "/images/barbecue.jpg",
+        "description": "55% viande de 1er choix (steaks, rôtis, entrecôtes, tournedos...) 45% Transformations",
+        "price": "78€"
+    },
+    {
+        "id": "4",
+        "title": "Colis estival 8kg",
+        "cover": "/images/barbecue2.jpg",
+        "description": "55% viande de 1er choix (steaks, rôtis, entrecôtes, tournedos...) 45% Transformations",
+        "price": "125€"
+    },
+    {
+        "id": "5",
+        "title": "Saucisse sèche",
+        "cover": "/images/saucisseche.jpg",
+        "description": "",
+        "price": "5.50€/pièce"
     }
 
 ]

@@ -6,7 +6,8 @@ function getAllColis(){
             cover : colis.cover,
             description : colis.description,
             title :colis.title,
-            id : colis.id
+            id : colis.id,
+            price : colis.price
         }
     })
 };

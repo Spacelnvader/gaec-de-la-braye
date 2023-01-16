@@ -1,0 +1,12 @@
+.ContactDiv {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin: 40px 0 40px 0;
+}
+
+.ContactDiv h3 {
+    margin-bottom: 5%;
+}
+

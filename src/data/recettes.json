@@ -1,0 +1,140 @@
+[
+    {
+        "id": "1",
+        "title": "Carpaccio",
+        "cover": "/images/carpaccio.jpg",
+        "requirement": [
+            {"preparation": "10 minutes"},
+            {"cuisson" : "1 heure"},
+            {"parts" : "4 personnes"}
+        ],
+        "ingredients": [
+            {
+                "ingredient" : "filer de boeuf",
+                "quantity" : "400",
+                "unit" : "g"
+            },
+            {
+                "ingredient" : "parmesan",
+                "quantity" : "180",
+                "unit" : "g"
+            },
+            {
+                "ingredient" : "feuilles de basilic",
+                "quantity" : "4"
+                
+            },
+            {
+                "ingredient" : "huile d'olive",
+                "quantity" : "8",
+                "unit" : "cuillères à soupe"
+            },
+            {
+                "ingredient" : "jus d'un demi citron"
+            },
+            {
+                "ingredient" : "vinaigre balsamique",
+                "quantity" : "1",
+                "unit" : "cuillères à soupe"
+            },
+            {
+                "ingredient" : "sel et poivre"
+            }
+
+        ],
+        "steps" : [
+            {"step" :"Coupez le filet de bœuf en très fines tranches et disposez-les sur les assiettes en veillant à ne pas trop superposer les tranches"},
+            {"step" :"Pour la sauce :Mélangez le jus du citron et l’huile d’olive avec le vinaigre balsamique et ajoutez des petits morceaux de basilic"},
+            {"step" :"Mélgangez-les à la sauce"},
+            {"step" :"Laissez reposer 45 minutes puis mélangez à nouveau"},
+            {"step" :"Répartissez la sauce sur l'ensemble des assiettes en veillant à recouvrir le maximum de surface de viande"},
+            {"step" :"Salez et poivrez"},
+            {"step" :"Râpez quelques gros copeaux de parmesan sur chaque assiette"},
+            {"step" :"Mettez au réfrigérateur pendant 15 minutes"},
+            {"step" :"Avant de servir, vous pouvez ajouter une poignée de roquette au centre de l'assiette pour décorer"}
+            
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Boeuf bourguignon",
+        "cover": "/images/boeuf-bourguignon.jpg",
+        "requirement": [
+            {"preparation": "45 minutes"},
+            {"cuisson" : "2h30"},
+            {"parts" : "4 personnes"}
+        ],
+        "ingredients": [
+            {
+                "ingredient" : "boeuf à braiser (jumeau, collier, macreuse, plat de côtes)",
+                "quantity" : "1",
+                "unit" : "kg"
+            },
+            {
+                "ingredient" : "oignon",
+                "quantity" : "1"
+            },
+            {
+                "ingredient" : "carotte",
+                "quantity" : "2"
+            },
+            {
+                "ingredient" : "gousses d'ail",
+                "quantity" : "2"
+            },
+            {
+                "ingredient" : "huile d'olive et de tournesol"                
+            },
+            {
+                "ingredient" : "champignons de Paris",
+                "quantity" : "150",
+                "unit" : "g"
+            },
+            {
+                "ingredient" : "vin rouge  (Bourgogne)",
+                "quantity" : "1",
+                "unit" : "bouteille"
+            },
+            {
+                "ingredient" : "lardon",
+                "quantity" : "150",
+                "unit" : "g"
+            },
+            {
+                "ingredient" : "farine",
+                "quantity" : "20",
+                "unit" : "g"
+            },
+            {
+                "ingredient" : "sucre",
+                "quantity" : "10",
+                "unit" : "g"
+            },
+            {
+                "ingredient" : "fond de veau",
+                "quantity" : "40",
+                "unit" : "cl"
+            },
+            {
+                "ingredient" : "sel et poivre"
+            }
+
+        ],
+        "steps" : [
+            {"step" : "Couper et dégraisser légèrement la viande. Éplucher et tailler en gros morceaux les carottes et l'oignon. Éplucher et dégermer les gousses d'ail"},
+            {"step" : "Mettre la viande et la garniture dans le vin rouge et faire mariner toute une nuit au réfrigérateur"},
+            {"step" : "Dans une cocotte chaude, mettre l'huile de tournesol et colorer les morceaux de viande environ 1 min de chaque côté"},
+            {"step" : "Ajouter la garniture aromatique, assaisonner de sel fin puis cuire doucement pendant 3 min"},
+            {"step" : "Ajouter la farine et cuire à nouveau 1 min tout en mélangeant pour bien incorporer la farine. Mouiller avec le vin rouge puis avec le fond de veau. Ajouter les tiges de persil et compléter avec de l'eau si nécessaire, faire bouillir puis baisser le feu et laisser mijoter pendant 2h30"},
+            {"step" : "Lorsque la viande est cuite, la retirer de la cocotte, passer la sauce au chinois pour la filtrer, vérifier sa texture et si elle est encore trop liquide, la réduire pendant quelques minutes. La goûter et l'assaisonner de sel et de poivre"},
+            {"step" : "Éplucher les champignons au couteau, puis dans une poêle, mettre un filet d'huile d'olive et faire sauter les champignons pour les colorer. Faites revenir vos lardons"},
+            {"step" : "Votre Bœuf bourguignon est prêt, bon appétit !"}
+        ],
+        
+        "disclaimer" : "Accompagnez ce plat traditionnel de pommes de terre vapeur, de pâtes fraîches ou de riz pilaf"
+
+
+    }
+
+
+]

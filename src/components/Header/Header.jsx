@@ -42,7 +42,7 @@ function Header() {
                     Produits transformés
                 </NavLink>
                 <NavLink
-                    to="/idéesrecettes"
+                    to="/ideesrecettes"
                     className={(idéerecetteCurrentPage) =>
                         idéerecetteCurrentPage.isActive ? "active" : ""
                     }

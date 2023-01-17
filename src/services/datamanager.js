@@ -1,4 +1,5 @@
 import colis from '../data/colis.json';
+import recipes from '../data/recettes.json'
 
 function getAllColis(){
     return colis.map((colis)=>{
@@ -13,5 +14,23 @@ function getAllColis(){
     })
 };
 
-export {getAllColis}
+function getAllRecettes(){
+    return recipes.map((recipe)=>{
+        return {
+            cover : recipe.cover,
+            title :recipe.title,
+            id : recipe.id,
+            requirement : recipe.requirement,
+            
+        }
+    })
+}
+
+function getRecipeById(id){
+
+    return recipes.find((recipe)=> recipe.id === id);
+
+}
+
+export {getAllColis, getAllRecettes, getRecipeById}
 

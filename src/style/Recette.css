@@ -1,0 +1,11 @@
+.recette {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.recetteheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

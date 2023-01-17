@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Page404 from './pages/Page404.jsx';
 import IdeeRecette from './pages/IdeeRecette';
 import ProduitsTransformés from './pages/ProduitsTransformés';
+import Recette from './pages/Recette';
 
 
 
@@ -23,9 +24,9 @@ root.render(
           <Route path="/blondedaquitaine" element={<BlondedAquitaine />} />
           <Route path="/noscolis" element={<Colis />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/idéesrecettes" element={<IdeeRecette />} />
+          <Route path="/ideesrecettes" element={<IdeeRecette />} />
+          <Route path="/ideesrecettes/:recetteId" element={<Recette />} />
           <Route path="/produits" element={<ProduitsTransformés />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
     </BrowserRouter>

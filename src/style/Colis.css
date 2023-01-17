@@ -6,7 +6,6 @@ div.colis {
     margin-bottom: 4%;
 
 }
-
 .disclaimer {
     display: flex;
     flex-direction: column-reverse;
@@ -22,5 +21,4 @@ div.colis {
 
 .disclaimer p {
     font-size: 20px;
-    
 }

@@ -1,0 +1,4 @@
+div .recettes {
+    display: flex;
+    justify-content: space-evenly;
+}

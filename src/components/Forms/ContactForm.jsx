@@ -33,6 +33,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="ContactForm">
+      <div className="contactdiv">
       <div className="formName">
         <label htmlFor="name"></label>
         <input type="text" id="name" className="nameinput" required placeholder="Nom et Prénom" />
@@ -45,7 +46,7 @@ const ContactForm = () => {
         <label htmlFor="message"></label>
         <textarea id="message"  rows="10" cols="50" required placeholder="Votre message ..." maxLength="1000"/>
       </div>
-
+      </div>
       <h2>Questionnaire facultatif</h2>
       <div className="RadioFields" id="RadioFields">
         <fieldset className="formgroup1">

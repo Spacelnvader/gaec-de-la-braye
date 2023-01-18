@@ -34,14 +34,6 @@ function Header() {
                     Nos Colis
                 </NavLink>
                 <NavLink
-                    to="/produits"
-                    className={(produitsCurrentPage) =>
-                        produitsCurrentPage.isActive ? "active" : ""
-                    }
-                >
-                    Produits transformés
-                </NavLink>
-                <NavLink
                     to="/ideesrecettes"
                     className={(idéerecetteCurrentPage) =>
                         idéerecetteCurrentPage.isActive ? "active" : ""

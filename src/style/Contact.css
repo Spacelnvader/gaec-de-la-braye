@@ -10,3 +10,10 @@ margin: 40px 0 40px 0;
     margin-bottom: 5%;
 }
 
+.ContactDiv h2 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5%;
+
+}

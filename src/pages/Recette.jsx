@@ -2,6 +2,9 @@ import { getRecipeById } from "../services/datamanager"
 import { useParams } from "react-router-dom"
 import Page404 from "./Page404"
 import '../style/Recette.css'
+// import Fouet from '../assets/fouet.png'
+// import Cocotte from '../assets/cocotte.png'
+// import Couverts from '../assets/couvert.png'
 
 function Recette() {
     const { recetteId } = useParams();
@@ -12,32 +15,33 @@ function Recette() {
             <div className="recetteheader">
                 <h1>{recette.title}</h1>
                 <img src={recette.cover} alt={recette.title} />
-                {recette.requirement.map((requirement, index) => (
-                    <div key={index} className="requirement">
-                        <p>{requirement.preparation}</p>
-                        <p>{requirement.cuisson}</p>
-                        <p>{requirement.parts}</p>
-                    </div>
-                ))}
+                <div className="requirementwrapper">
+                    {recette.requirement.map((requirement, index) => (
+                        <div key={index} className="requirement">
+                            <p>{requirement.preparation}{requirement.cuisson}{requirement.parts}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
+            <div className="recettewrapper">
+                <div className="recetteingredient">
+                    {/* get all children from parent json */}
+                    {recette.ingredients.map((ingredients, index) => (
+                        <div key={index} className="ingredient">
+                            <p>{ingredients.ingredient}</p>
+                            <p>{ingredients.quantity}</p>
+                            <p>{ingredients.unit}</p>
+                        </div>
 
-            <div className="recetteingredient">
-                {/* get all children from parent json */}
-                {recette.ingredients.map((ingredients, index) => (
-                    <div key={index} className="ingredient">
-                        <p>{ingredients.ingredient}</p>
-                        <p>{ingredients.quantity}</p>
-                        <p>{ingredients.unit}</p>
-                    </div>
+                    ))}
+                </div>
+                <div className="recettestep">
+                    {/* put each step from steps in a paragraph */}
+                    {recette.steps.map((step, index) => (
+                        <p key={index}>{step.step}</p>
+                    ))}
 
-                ))}
-            </div>
-            <div className="recettestep">
-                {/* put each step from steps in a paragraph */}
-                {recette.steps.map((step, index) => (
-                    <p key={index}>{step.step}</p>
-                ))}
-
+                </div>
             </div>
         </div>
 

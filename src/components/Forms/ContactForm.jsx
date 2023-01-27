@@ -7,11 +7,20 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Envoi...");
-    const { name, email, message, ConsommationMensuelle, BudgetViande, TransformationFavorite } = e.target.elements;
+    const { name, email, message, ConsommationMensuelle, BudgetViande } = e.target.elements;
+    //get all values of checked in a string
+    let TransformationFavorite = "";
+    let TransformationFavoriteArray = document.querySelectorAll(
+      "input[name=TransformationFavorite]:checked"
+    );
+    TransformationFavoriteArray.forEach((element) => {
+      TransformationFavorite += element.value + " | ";
+    });
+
     let details = {
       name: name.value,
       email: email.value,
-      message: "<br/>" + message.value + "<br/> Fin du message <br/> Consommation de viande : " + ConsommationMensuelle.value + " <br/> Budget prêt à consacrer mensuellement :" + BudgetViande.value + " <br/> Transformation de viande favorite :" + TransformationFavorite.value,      
+      message: "<br/>" + message.value + "<br/> Fin du message <br/> Consommation de viande : " + ConsommationMensuelle.value + " <br/> Budget prêt à consacrer mensuellement : " + BudgetViande.value + " <br/> Transformation de viande favorite : " + TransformationFavorite,      
     };    
     let response = await fetch("http://localhost:3001/contact", {
       method: "POST",
@@ -107,32 +116,32 @@ const ContactForm = () => {
             <div className="Choices">
               <div className="Choice">
                 <label className="form-check-label" htmlFor="defaultCheck3">En morceaux pour recette (sauce, pot au feu...)</label>
-                <input className="form-check-input" type="radio" name="TransformationFavorite" value="En morceaux pour recette (sauce, pot au feu...)" />
+                <input className="TransformationFavorite" type="checkbox" name="TransformationFavorite" value="En morceaux pour recette (sauce, pot au feu...)" />
 
               </div>
               <div className="Choice">
                 <label className="form-check-label" htmlFor="defaultCheck3">Bavette, steak, rumsteak</label>
-                <input className="form-check-input" type="radio" name="TransformationFavorite" value="Bavette, steak, rumsteak" />
+                <input className="TransformationFavorite" type="checkbox" name="TransformationFavorite" value="Bavette, steak, rumsteak" />
 
               </div>
               <div className="Choice">
                 <label className="form-check-label" htmlFor="defaultCheck3">Entrecôte ou côte de boeuf</label>
-                <input className="form-check-input" type="radio" name="TransformationFavorite" value="Entrecôte ou côte de boeuf" />
+                <input className="TransformationFavorite" type="checkbox" name="TransformationFavorite" value="Entrecôte ou côte de boeuf" />
 
               </div>
               <div className="Choice">
                 <label className="form-check-label" htmlFor="defaultCheck3">Rôti, tournedos</label>
-                <input className="form-check-input" type="radio" name="TransformationFavorite" value="Rôti, tournedos" />
+                <input className="TransformationFavorite" type="checkbox" name="TransformationFavorite" value="Rôti, tournedos" />
 
               </div>
               <div className="Choice">
                 <label className="form-check-label" htmlFor="defaultCheck3">Carpaccio ou tartare</label>
-                <input className="form-check-input" type="radio" name="TransformationFavorite" value="Carpaccio ou tartare" />
+                <input className="TransformationFavorite" type="checkbox" name="TransformationFavorite" value="Carpaccio ou tartare" />
 
               </div>
               <div className="Choice">
                 <label className="form-check-label" htmlFor="defaultCheck3">Steak hachés ou saucisses</label>
-                <input className="form-check-input" type="radio" name="TransformationFavorite" value="Steak hachés ou saucisses" />
+                <input className="TransformationFavorite" type="checkbox" name="TransformationFavorite" value="Steak hachés ou saucisses" />
 
               </div>
             </div>

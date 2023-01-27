@@ -2,9 +2,7 @@ import { getRecipeById } from "../services/datamanager"
 import { useParams } from "react-router-dom"
 import Page404 from "./Page404"
 import '../style/Recette.css'
-// import Fouet from '../assets/fouet.png'
-// import Cocotte from '../assets/cocotte.png'
-// import Couverts from '../assets/couvert.png'
+
 
 function Recette() {
     const { recetteId } = useParams();

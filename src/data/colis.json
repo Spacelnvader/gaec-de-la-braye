@@ -17,7 +17,7 @@
         "id": "3",
         "title": "Colis estival 5kg",
         "cover": "/images/barbecue.jpg",
-        "description": "55% viande de 1er choix (steaks, rôtis, entrecôtes, tournedos...) 45% Transformations",
+        "description": "55% viande de 1er choix (steaks, rôtis, entrecôtes, tournedos...) 45% Transformations (Saucisses nature, aux herbes et basquaises, steak hachés)",
         "disclaimer" : "Disponible d'avril à octobre",
         "price": "78€"
     },
@@ -25,7 +25,7 @@
         "id": "4",
         "title": "Colis estival 8kg",
         "cover": "/images/barbecue2.jpg",
-        "description": "55% viande de 1er choix (steaks, rôtis, entrecôtes, tournedos...) 45% Transformations",
+        "description": "55% viande de 1er choix (steaks, rôtis, entrecôtes, tournedos...) 45% Transformations (Saucisses nature, aux herbes et basquaises, steak hachés)",
         "disclaimer" : "Disponible d'avril à octobre",
         "price": "125€"
     },
@@ -33,7 +33,7 @@
         "id": "5",
         "title": "Saucisse sèche",
         "cover": "/images/saucisseche.jpg",
-        "description": "130g/pièce, idéal pour l'apéritif et faible en calorie",
+        "description": "Saucisse sèche 100% pur bœuf. Goût inimitable et très faible en matière grasse. Elle est Idéale pour vos apéritifs ou dans vos salades !",
         "price": "5.50€/pièce"
     }
 

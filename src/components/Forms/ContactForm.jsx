@@ -1,37 +1,34 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import "./ContactForm.css";
 
 const ContactForm = () => {
-  const [status, setStatus] = useState("Envoyer");
+  const form = useRef();
   
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("Envoi...");
-    const { name, email, message, ConsommationMensuelle, BudgetViande } = e.target.elements;
-    //get all values of checked in a string
-    let TransformationFavorite = "";
-    let TransformationFavoriteArray = document.querySelectorAll(
-      "input[name=TransformationFavorite]:checked"
-    );
-    TransformationFavoriteArray.forEach((element) => {
-      TransformationFavorite += element.value + " | ";
-    });
 
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: "<br/>" + message.value + "<br/> Fin du message <br/> Consommation de viande : " + ConsommationMensuelle.value + " <br/> Budget prêt à consacrer mensuellement : " + BudgetViande.value + " <br/> Transformation de viande favorite : " + TransformationFavorite,      
-    };    
-    let response = await fetch("http://localhost:3001/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+    // const { ConsommationMensuelle, BudgetViande } = e.target.elements;
+    // let TransformationFavorite = "";
+    // let TransformationFavoriteArray = document.querySelectorAll(
+    //   "input[name=TransformationFavorite]:checked"
+    // );
+    // TransformationFavoriteArray.forEach((element) => {
+    //   TransformationFavorite += element.value + " | ";
+    // });
+    // let QuestionnaireFacultatif = "Consommation de viande : " + ConsommationMensuelle.value + " <br/> Budget prêt à consacrer mensuellement : " + BudgetViande.value + " <br/> Transformation de viande favorite : " + TransformationFavorite;
+
+    emailjs.sendForm(
+      'service_ttyt09a',
+      'template_y0xy89b',
+      form.current,
+      'd9iQIipgOmEcFE1io'
+      )
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
     //reset the form
     e.target.reset();
   };
@@ -41,19 +38,19 @@ const ContactForm = () => {
   
 
   return (
-    <form onSubmit={handleSubmit} className="ContactForm">
+    <form ref={form} onSubmit={handleSubmit} className="ContactForm">
       <div className="contactdiv">
       <div className="formName">
         <label htmlFor="name"></label>
-        <input type="text" id="name" className="nameinput" required placeholder="Nom et Prénom" />
+        <input type="text" name="name" id="name" className="nameinput" required placeholder="Nom et Prénom" />
       </div>
       <div className="formEmail">
         <label htmlFor="email"></label>
-        <input type="email" id="email" className="emailinput" required placeholder="Email" />
+        <input type="email" name="email" id="email" className="emailinput" required placeholder="Email" />
       </div>
       <div className="formMessage">
         <label htmlFor="message"></label>
-        <textarea id="message"  rows="10" cols="50" required placeholder="Votre message ..." maxLength="1000"/>
+        <textarea id="message"  name="message" rows="10" cols="50" required placeholder="Votre message ..." maxLength="1000"/>
       </div>
       </div>
       <h2>Questionnaire facultatif</h2>
@@ -115,7 +112,7 @@ const ContactForm = () => {
             <legend className="radioTitle">Sous quelle forme achetez-vous le plus souvent votre viande de boeuf ou de veau?</legend>
             <div className="Choices">
               <div className="Choice">
-                <label className="form-check-label" htmlFor="defaultCheck3">En morceaux pour recette (sauce, pot au feu...)</label>
+                <label className="form-check-label" htmlFor="defaultCheck3">En morceaux pour recette (sauce, pot au feu..)</label>
                 <input className="TransformationFavorite" type="checkbox" name="TransformationFavorite" value="En morceaux pour recette (sauce, pot au feu...)" />
 
               </div>
@@ -149,7 +146,7 @@ const ContactForm = () => {
         </fieldset>
       </div>
       
-      <button type="submit">{status}</button>
+      <button type="submit">Envoyer</button>
     </form>
   );
 };

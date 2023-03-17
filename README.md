@@ -1,4 +1,4 @@
-Création  d'un site avec react pour le Gaec-de-la-braye : https://www.facebook.com/profile.php?id=100050345782564
+Création  d'un site avec react pour le Gaec-de-la-braye : http://gaec-de-la-braye.fr/
 
 
 # Getting Started with Create React App
